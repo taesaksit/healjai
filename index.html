@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div class="container mx-auto px-4 py-8 animate-fadeIn ">
+        <div class="flex flex-wrap -mx-2 ">
+            <div class="w-full sm:w-1/2 lg:w-1/2 p-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg" alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-sm sm:text-base md:text-lg lg:text-xl">Firstname Lastname</h5>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg">Department: Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Cumque, quae. </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary text-light " onclick="my_modal_3.showModal()">
+                                <i class="fas fa-qrcode"></i> QrCode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/2 p-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_640.jpg" alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-sm sm:text-base md:text-lg lg:text-xl">Firstname Lastname</h5>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg">Department: Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Cumque, quae. </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary text-light " onclick="my_modal_3.showModal()">
+                                <i class="fas fa-qrcode"></i> QrCode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/2 p-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2024/03/25/15/36/whale-8654998_640.jpg" alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-sm sm:text-base md:text-lg lg:text-xl">Firstname Lastname</h5>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg">Department: Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Cumque, quae. </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary text-light " onclick="my_modal_3.showModal()">
+                                <i class="fas fa-qrcode"></i> QrCode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/2 p-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2023/11/12/17/30/ai-generated-8383721_640.jpg"
+                            alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-sm sm:text-base md:text-lg lg:text-xl">Firstname Lastname</h5>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg">Department: Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Cumque, quae. </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary " onclick="my_modal_3.showModal()">
+                                <i class="fas fa-qrcode"></i> QrCode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- END FLEX CONTAINER -->
+        </div>
+    </div>
+
+  
+
+
+
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="text-lg font-bold">เพิ่มเพื่อน!</h3>
+            <img src="https://cdn.pixabay.com/photo/2021/12/12/16/10/qr-6865526_640.png" alt="">
+        </div>
+    </dialog>
+</body>
+
+</html>
